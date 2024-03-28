@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginSuccessActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logologin"
+            />
+        <androidx.appcompat.widget.Toolbar
+            android:background="#4CAF50"
+            android:id="@+id/toolbargiohang"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <ImageView
+                android:id="@+id/iconHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_home"
+                android:foreground="@drawable/iconcustom"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_menu"
+                android:foreground="@drawable/iconcustom"
+                />
+            <LinearLayout
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user2"
+                    android:layout_marginRight="8dp"
+                    android:foreground="@drawable/iconcustom" />
+                />
+                <ImageView
+                    android:id="@+id/iconCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_category"
+                    android:layout_marginRight="8dp"
+                    android:foreground="@drawable/iconcustom" />
+                />
+                <ImageView
+                    android:id="@+id/iconsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search"
+                    android:foreground="@drawable/iconcustom" />
+                />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="Thông tin tài khoản"
+                android:textSize="30dp" />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐẶT HOA ONLINE - GIAO HÀNG THẦN TỐC"
+                android:textColor="#E91E63"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gọi ngay 19008585"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tài khoản của tôi"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+                    <TextView
+                        android:id="@+id/txtUsername"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginRight="5dp"/>
+                    <TextView
+                        android:id="@+id/txtPassword"
+                        android:textSize="18dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginRight="5dp"/>
+                    <CheckBox
+                        android:id="@+id/cbPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hiện mật khẩu"/>
+                <TextView
+                    android:textSize="18dp"
+                    android:id="@+id/signOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng xuất"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

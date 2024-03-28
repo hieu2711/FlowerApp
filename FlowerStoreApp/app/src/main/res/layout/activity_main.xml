@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logologin"
+            />
+        <androidx.appcompat.widget.Toolbar
+            android:background="#4CAF50"
+            android:id="@+id/toolbargiohang"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_home"
+                android:foreground="@drawable/iconcustom"
+                android:layout_marginRight="10dp"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_menu"
+                android:foreground="@drawable/iconcustom"
+                />
+            <LinearLayout
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_user2"
+                    android:layout_marginRight="8dp"
+                    android:foreground="@drawable/iconcustom" />
+                    />
+                <ImageView
+                    android:id="@+id/imgCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_category"
+                    android:layout_marginRight="8dp"
+                    android:foreground="@drawable/iconcustom" />
+                    />
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_search"
+                    android:foreground="@drawable/iconcustom" />
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="vertical">
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ĐẶT HOA ONLINE - GIAO HÀNG THẦN TỐC"
+                android:textColor="#E91E63"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gọi ngay 19008585"
+                android:textColor="#E91E63"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ViewFlipper>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="YÊU THÍCH NHẤT"
+                    android:textSize="25dp" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/freeship"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FREE SHIPPING"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="Giao miễn phí nội thành phố"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/delivery"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GIAO NHANH 90 PHÚT"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giao nhanh khu vực nội thành phố"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="30dp"
+                    />
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/qualification"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOA ĐẸP NHƯ HÌNH"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" Cam kết giống 100% so với ảnh chụp"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="ĐẶT NHIỀU NHẤT"
+                    android:textSize="25dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginBottom="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:gravity="center"
+                android:src="@drawable/logologin"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"/>
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotline: 19008181"
+                />
+            <TextView
+                android:gravity="center"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: anemoreShop@gmail.com"
+                />
+            <ImageView
+                android:gravity="center"
+                android:src="@drawable/logonoitice"
+                android:layout_width="230dp"
+                android:layout_height="120dp"/>
+            <TextView
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SHOP HOA ANEMORE:"/>
+            <TextView
+                android:textSize="18dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Địa chỉ: 371 Nguyễn Kiệm,Phường 17,quận Gò Vấp,Tp.Hồ Chí Minh"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
